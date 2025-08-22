@@ -2,11 +2,11 @@
   display: none;
 }
 :root {
-  --color-site-body: #f4f4f4;
-  --color-site-bg: #f4f4f4;
+  --color-site-body: #f5f5f5;
+  --color-site-bg: #f5f5f5;
   --color-site-inner: #fff;
   --color-site-footer: #666;
-  --color-card: #fff;
+  --color-card: #e0e0e0;
   --color-text: #444;
   --color-block: #f6f6f6;
   --color-inlinecode: #c74f00;
@@ -19,7 +19,7 @@
   --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #30ad91;
+  --color-list-hl: #a82525;
   --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
@@ -41,13 +41,13 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #d32f2f;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #d32f2f;
 }
 html {
   color: var(--color-text);
@@ -104,7 +104,7 @@ a {
   -ms-transition: all 0.28s ease;
 }
 a:hover {
-  color: #ff5722;
+  color: #d32f2f;
 }
 a:active,
 a:hover {
@@ -156,7 +156,7 @@ button {
 }
 @supports (backdrop-filter: blur(20px)) {
   .blur {
-    background: rgba(255,255,255,0.9) !important;
+    background: rgba(224,224,224,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -536,7 +536,7 @@ button {
   padding-left: 36px;
   border-radius: 1.4rem;
   -webkit-border-radius: 1.4rem;
-  background: rgba(255,255,255,0.6);
+  background: rgba(224,224,224,0.6);
   backdrop-filter: blur(10px);
   border: none;
   color: var(--color-text);
@@ -547,10 +547,10 @@ button {
   }
 }
 .cover-wrapper .cover-body .m_search .input:hover {
-  background: rgba(255,255,255,0.8);
+  background: rgba(224,224,224,0.8);
 }
 .cover-wrapper .cover-body .m_search .input:focus {
-  background: #fff;
+  background: #e0e0e0;
 }
 .cover-wrapper .list-h {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -661,6 +661,158 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
+    --color-inlinecode: #d56d28;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
+    --color-list-hl: #db5858;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
+    --color-copyright-bkg: #21252b;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(95%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(31,31,31,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(38,38,38,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
+  --color-inlinecode: #d56d28;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
+  --color-list-hl: #db5858;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
+  --color-copyright-bkg: #21252b;
+}
+[color-scheme='dark'] img {
+  filter: brightness(95%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(31,31,31,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(38,38,38,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
 }
 @font-face {
   font-family: 'UbuntuMono';
@@ -875,7 +1027,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #d32f2f;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -987,7 +1139,7 @@ button {
   line-height: 1.3;
   width: 100%;
   color: var(--color-text);
-  background: #fafafa;
+  background: #dbdbdb;
   box-shadow: none;
   -webkit-box-shadow: none;
   box-sizing: border-box;
@@ -1028,7 +1180,7 @@ button {
     width: 0;
     overflow: hidden;
     position: absolute;
-    background: #fff;
+    background: #ededed;
     transition: all 0.28s ease;
     -webkit-transition: all 0.28s ease;
     -khtml-transition: all 0.28s ease;
@@ -1055,7 +1207,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #d32f2f;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1194,7 +1346,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #d32f2f;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -1496,5 +1648,10 @@ ul.list-v >li>a:hover {
 @media screen and (max-width: 680px) {
   #u-search {
     padding: 0px;
+  }
+}
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
   }
 }
