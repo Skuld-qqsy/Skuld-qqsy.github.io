@@ -45,7 +45,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-08-22T13:01:15.000Z">
-<meta property="article:modified_time" content="2025-08-22T13:02:28.759Z">
+<meta property="article:modified_time" content="2025-08-23T08:40:12.708Z">
 <meta property="article:author" content="Skuld">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1791,7 +1791,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1755879273608),
+    lastupdate: new Date(1755956881741),
     sidebar: {
       for_page: ["blogger","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2334,9 +2334,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="活动列表"
+                href="/categories/all-activities" title="活动列表"
                   
                   
+                  
+                    active-action="action-categoriesall-activities"
                   >
                   <i class='fa-regular fa-image fa-fw'></i>活动列表
                 </a>
@@ -2370,11 +2372,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/common-activities/" title="常驻活动"
+                href="/categories/all-activities/common-activities/" title="常驻活动"
                   
                   
                   
-                    active-action="action-categoriescommon-activities"
+                    active-action="action-categoriesall-activitiescommon-activities"
                   >
                   常驻活动
                 </a>
@@ -2393,9 +2395,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="社团作品"
+                href="/archives/" title="社团作品"
                   
                   
+                  
+                    active-action="action-archives"
                   >
                   <i class='fa-regular fa-newspaper fa-fw'></i>社团作品
                 </a>
@@ -2620,9 +2624,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="活动列表"
+                href="/categories/all-activities" title="活动列表"
                   
                   
+                  
+                    active-action="action-categoriesall-activities"
                   >
                   <i class='fa-regular fa-image fa-fw'></i>活动列表
                 </a>
@@ -2656,11 +2662,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/common-activities/" title="常驻活动"
+                href="/categories/all-activities/common-activities/" title="常驻活动"
                   
                   
                   
-                    active-action="action-categoriescommon-activities"
+                    active-action="action-categoriesall-activitiescommon-activities"
                   >
                   常驻活动
                 </a>
@@ -2679,9 +2685,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="社团作品"
+                href="/archives/" title="社团作品"
                   
                   
+                  
+                    active-action="action-archives"
                   >
                   <i class='fa-regular fa-newspaper fa-fw'></i>社团作品
                 </a>
@@ -2877,14 +2885,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/past-activities/">past-activities</a><span class="sep"></span><a class="category-link" href="/categories/video/">video</a>
+    <a class="category-link" href="/categories/all-activities/">all-activities</a><span class="sep"></span><a class="category-link" href="/categories/all-activities/past-activities/">past-activities</a><span class="sep"></span><a class="category-link" href="/categories/video/">video</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
         <a href="/categories/video/" itemprop="url"><span itemprop="name">video</span></a>
       </span>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/past-activities/" itemprop="url"><span itemprop="name">past-activities</span></a>
+        <a href="/categories/all-activities/" itemprop="url"><span itemprop="name">all-activities</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/all-activities/past-activities/" itemprop="url"><span itemprop="name">past-activities</span></a>
       </span>
     
   </div>
@@ -2944,10 +2956,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-22T21:02:28+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-23T16:40:12+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Aug 22, 2025</p>
+    <p>更新于：Aug 23, 2025</p>
   </a>
 </div>
 
@@ -3770,7 +3782,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"摆烂研究所","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Skuld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"社团网站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"摆烂研究所"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/video/","name":"video"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/past-activities/","name":"past-activities"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/08/22/video/video-16/","name":"我去，嘉年华！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"摆烂研究所","url":"http://example.com/","keywords":null,"description":"社团网站","author":{"@type":"Person","name":"Skuld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"社团网站"},"publisher":{"@type":"Organization","name":"摆烂研究所","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"我去，嘉年华！","description":"社团网站","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/08/22/video/video-16/"},"author":{"@type":"Person","name":"Skuld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"摆烂研究所","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/08/22/video/video-16/","wordCount":0,"datePublished":"2025-08-22T13:01:15.000Z","dateModified":"2025-08-22T13:02:28.759Z","articleSection":"video","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"摆烂研究所","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Skuld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"社团网站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"摆烂研究所"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/video/","name":"video"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/all-activities/","name":"all-activities"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/all-activities/past-activities/","name":"past-activities"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/08/22/video/video-16/","name":"我去，嘉年华！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"摆烂研究所","url":"http://example.com/","keywords":null,"description":"社团网站","author":{"@type":"Person","name":"Skuld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"社团网站"},"publisher":{"@type":"Organization","name":"摆烂研究所","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"我去，嘉年华！","description":"社团网站","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/08/22/video/video-16/"},"author":{"@type":"Person","name":"Skuld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"摆烂研究所","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/08/22/video/video-16/","wordCount":0,"datePublished":"2025-08-22T13:01:15.000Z","dateModified":"2025-08-23T08:40:12.708Z","articleSection":"video","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
